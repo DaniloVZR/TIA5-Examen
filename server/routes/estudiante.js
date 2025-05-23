@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const estudianteRepository = require('../repositories/estudianteRepository');
+const estudianteRepository = require('../repositories/estudiante');
 
 // GET todos los estudiantes
 router.get('/', async (req, res) => {

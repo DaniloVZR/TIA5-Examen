@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 // Importa la ruta del tipo de proyecto
-const tipoProyectoRouter = require('./routes/tipo-proyecto.js');
+const estudianteRouter = require('./routes/estudiante.js');
 
 const app = express();
 
