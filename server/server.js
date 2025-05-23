@@ -11,11 +11,11 @@ app.use(cors());
 app.use(express.json());
 
 // Rutas
-app.use('/api/tipo-proyecto', tipoProyectoRouter); // Usa la ruta del módulo
+app.use('/api/estudiante', estudianteRouter); // Usa la ruta del módulo
 
 // Ruta de prueba
 app.get('/', (req, res) => {
-  res.json({ message: 'API de registro de proyectos PIA - Tipo Proyecto' });
+  res.json({ message: 'API de red social' });
 });
 
 // Manejo de errores
