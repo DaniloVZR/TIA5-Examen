@@ -1,0 +1,78 @@
+body {
+      background: linear-gradient(135deg, #fceaff, #e4f0ff);
+      font-family: 'Quicksand', sans-serif;
+      color: #444;
+      padding: 2rem;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    h2 {
+      color: #9b5de5;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    label {
+      color: #5d5fef;
+      font-weight: 600;
+    }
+
+    .form-control,
+    .form-select {
+      background-color: #fff3fc;
+      border: 2px solid #f3c4fb;
+      transition: all 0.3s ease;
+      border-radius: 12px;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+      border-color: #fca3cc;
+      box-shadow: 0 0 0 0.25rem rgba(252, 163, 204, 0.3);
+    }
+
+    .btn-primary {
+      background-color: #ff8fab;
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .btn-primary:hover {
+      background-color: #f06292;
+      transform: scale(1.02);
+    }
+
+    .alert-success {
+      background-color: #d0f4de;
+      border: 1px solid #a3e4c1;
+      color: #276749;
+      font-weight: 500;
+    }
+
+    .invalid-feedback {
+      font-size: 0.9rem;
+      color: #e76f51;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
