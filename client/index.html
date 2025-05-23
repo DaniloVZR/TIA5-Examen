@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Inscripción a proyectos</h1>
+    <div class="panel">
+      
+      <div class="form-container">
+        <h2>Formulario Tipo de Proyecto</h2>
+        <form id="proyecto-form">
+          <div class="form-group">
+            <label for="id">ID:</label>
+            <input type="number" id="id" name="id">
+          </div>
+          <div class="form-group">
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigo" name="codigo" required>
+          </div>
+          <div class="form-group">
+            <label for="descripcion">Descripción:</label>
+            <input type="text" id="descripcion" name="descripcion" required>
+          </div>
+          <div class="form-group">
+            <label for="abreviatura">Abreviatura:</label>
+            <input type="text" id="abreviatura" name="abreviatura" required>
+          </div>
+          <div class="form-group">
+            <label for="fecha-registro">Fecha de Registro:</label>
+            <input type="date" id="fecha-registro" name="fecha-registro" required>
+          </div>
+        </form>
+      </div>
+
+      <div class="controls">
+        <button id="btn-listar">Listar Proyectos (GET)</button>
+        <button id="btn-crear">Crear Proyectos (POST)</button>
+        <button id="btn-actualizar">Actualizar Proyectos (PUT)</button>
+        <button id="btn-eliminar">Eliminar Proyecto (DELETE)</button>
+      </div>
+
+      <div class="response-container">
+        <h2>Respuesta del Servidor</h2>
+        <div class="status-code">Código HTTP: <span id="status-code">---</span></div>
+        <pre id="response-message">Esperando operación...</pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
